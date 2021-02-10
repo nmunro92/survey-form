@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="survey.css">
+    </head> 
+    
+  <h1 id="title"> 
+    Survey 
+ </h1>
+
+<p id="description"> Enter your details to learn more!</p>
+
+<form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name"> Name</label>
+ <input
+    type="text"
+    id="name"
+    name="name"
+    class="form-control"
+    placeholder="Enter your name"
+       required
+        />
+  </div>
+   <div class=:"form-group">
+    <label id="email-label" for="email"> Email</label>
+ <input
+    type="email"
+    name="email"
+    id="email"
+    class="form-control"
+    placeholder="Enter your email"
+       required
+        />
+  </div>
+     <div class=:"form-group">
+    <label id="number-label" for="number"> Number</label>
+ <input
+    type="number"
+    name="number"
+    id="number"
+    class="form-control"
+    placeholder="Enter your number"
+    min="8"
+    max="11"
+        />
+  </div>
+  
+  <div class="form-group">
+  <p>How many years' experience do you have?</p>
+    <label>
+      <input
+             name="years-experience"
+             value="0-1"
+             type="radio"
+             class="input-radio"
+             checked
+             />0-1</label>
+    <label>
+      <input
+             name="years-experience"
+             value="2-5"
+             type="radio"
+             class="input-radio"
+             />2-5</label>
+    <label>
+      <input
+             name="years-experience"
+             value="5-10"
+             type="radio"
+             class="input-radio"
+             />5-10</label>
+    <label>
+      <input
+            name="years-experience"
+             value="10+"
+             type="radio"
+             class="input-radio"
+             />10+</label>
+  </div>
+  
+  <div class="form-group">
+    
+    <label id= "dropdown-label" for="dropdown">Have you used our platform before?</label>
+    <select id="dropdown" class="form-control">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+      required
+          </select>
+      </div>
+<div class="form-group">
+  <p>What is your current role?</p>
+  <label>
+    <input
+           name="role"
+           value="front-end"
+           type="checkbox"
+           class="input-checkbox"
+           >Front End Developer</label>
+  <label>
+    <input
+           name="role"
+           value="back-end"
+           type="checkbox"
+           class="input-checkbox"
+           >Back End Developer
+  </label>
+<label>
+    <input
+           name="role"
+           value="full-stack"
+           type="checkbox"
+           class="input-checkbox"
+           >Full Stack Developer
+  </label>
+  <label>
+    <input
+           name="role"
+           value="other"
+           type="checkbox"
+           class="input-checkbox"
+           >Other
+  </label>
+  </div>
+  
+  <div class="form-group">
+    <p>Any additional information to add?</p>
+    <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter addtional info...">
+    </textarea>
+  </div>
+   <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+</form>
+</div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html> 
