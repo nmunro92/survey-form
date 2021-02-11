@@ -3,9 +3,9 @@
   <head>
 <link rel="stylesheet" href="survey.css">
     </head> 
-    
+<body>
   <h1 id="title"> 
-    Survey 
+    Survey Form
  </h1>
 
 <p id="description"> Enter your details to learn more!</p>
@@ -13,7 +13,8 @@
 <form id="survey-form">
   <div class="form-group">
     <label id="name-label" for="name"> Name</label>
- <input
+     
+    <input
     type="text"
     id="name"
     name="name"
@@ -22,9 +23,10 @@
        required
         />
   </div>
-   <div class=:"form-group">
+   <div class="form-group">
     <label id="email-label" for="email"> Email</label>
- <input
+
+    <input
     type="email"
     name="email"
     id="email"
@@ -33,9 +35,10 @@
        required
         />
   </div>
-     <div class=:"form-group">
+     <div class="form-group">
     <label id="number-label" for="number"> Number</label>
- <input
+      
+    <input
     type="number"
     name="number"
     id="number"
@@ -77,8 +80,7 @@
              type="radio"
              class="input-radio"
              />10+</label>
-  </div>
-  
+    </div>
   <div class="form-group">
     
     <label id= "dropdown-label" for="dropdown">Have you used our platform before?</label>
@@ -88,15 +90,13 @@
       required
           </select>
       </div>
-<div class="form-group">
+<div class="form-group" id="role">
   <p>What is your current role?</p>
-  <label>
-    <input
+  <label><input
            name="role"
            value="front-end"
            type="checkbox"
-           class="input-checkbox"
-           >Front End Developer</label>
+           class="input-checkbox">Front End Developer</label>
   <label>
     <input
            name="role"
@@ -140,5 +140,5 @@
 </form>
 </div>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
+</body>
 </html> 
